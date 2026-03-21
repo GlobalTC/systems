@@ -1,5 +1,7 @@
 # QMD Environment Status Report
 
+**Last Updated: 2026-03-21 08:15 AM MDT**
+
 ## Overview
 This report provides a snapshot of the current local QMD (Query Markup Documents) environment and indexed collections, organized by the work/personal prefix strategy.
 
@@ -32,4 +34,4 @@ This report provides a snapshot of the current local QMD (Query Markup Documents
 | `pers.pi5-ubuntu` | Personal | 16 docs | `/Users/billfrench/Library/Mobile Documents/iCloud~md~obsidian/Documents/pi5-ubuntu` |
 | `pers.systems` | Personal | 6 docs | `/Users/billfrench/Library/Mobile Documents/iCloud~md~obsidian/Documents/systems` |
 
-*Report updated on: 2026-03-21*
+*Updated on: 2026-03-21 08:15:39*
