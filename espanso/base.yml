@@ -1,0 +1,244 @@
+#
+# espanso match file
+#
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+matches:
+
+
+  #
+  # drive search snippets
+  #
+  
+  # Type:document
+  - trigger: "t:d"
+    replace:  "Type:document "
+  # Type:folder
+  - trigger: "t:f"
+    replace:  "Type:folder "
+  # Type:spreadsheet
+  - trigger: "t:s"
+    replace:  "Type:spreadsheet "
+
+  #
+  # code snippets
+  #
+
+  # Javascript Switch()
+  - trigger: "sw "
+    replace: "switch($|$) {\ncase x:\nbreak;\ncase y:\nbreak;\ncase z:\nbreak;\ndefault: "
+  # Console.Log()
+  - trigger: "cll"
+    replace: "console.log($|$);"
+  # Javascript Comment Segment
+  - trigger: "////"
+    replace: "//\n// $|$\n//\n"
+  # Python Comment Segment
+  - trigger: "####"
+    replace: "##\n## $|$\n##\n"
+  # Javascript Logger.Log();
+  - trigger: "lll"
+    replace:  "Logger.log($|$);"
+  # Javascript Return()
+  - trigger: "ret("
+    replace:  "return($|$);"
+  # Javascript Function
+  - trigger: "fn "
+    replace: "//\n// \n//\nasync function $|$() {\n  \n  return(true);\n}\n"
+  # Javascript For...Next Loop
+  - trigger: "for("
+    replace:  "// $|$\nfor (var i in oData) {\n$|$\n}\n"
+
+  #
+  # address snippets
+  #
+
+  # bill.french@dustytruck.com
+  - trigger: "bfd"
+    replace: "bill.french@dustytruck.com"
+  # agent@dustytruck.com
+  - trigger: "adt"
+    replace: "agent@dustytruck.com"
+  # sherylloufrench@gmail.com
+  - trigger: "slf"
+    replace: "sherylloufrench@gmail.com"
+  # baf9983@gmail.com
+  - trigger: "baf"
+    replace: "baf9983@gmail.com"
+  # bill.french@streamit.live
+  - trigger: "bfs"
+    replace: "bill.french@streamit.live"
+  # bill.french@gmail.com
+  - trigger: "bfg"
+    replace: "bill.french@gmail.com"
+  # bfrench@phasechange.ai
+  - trigger: "bfp"
+    replace: "bfrench@phasechange.ai"
+
+  #
+  # writing snippets ...
+  #
+  # Anthropic
+  - trigger: "Ant "
+    replace:  "Anthropic "
+  # Nationwide
+  - trigger: "Nw "
+    replace:  "Nationwide "
+# GitHub
+  - trigger: "Gh "
+    replace:  "GitHub "
+  # QMD
+  - trigger: "qmd "
+    replace:  "QMD "
+  # Markdown Document
+  - trigger: "mdd "
+    replace:  "markdown "
+  # Markdown
+  - trigger: "Mdd "
+    replace:  "Markdown "
+  # OpenClaw
+  - trigger: "oc "
+    replace:  "OpenClaw "
+  # Luma
+  - trigger: "luma "
+    replace:  "Luma "
+  # Luma's
+  - trigger: "luma's "
+    replace:  "Luma's "
+  # Knowledge Graph Query Language
+  - trigger: "kgl"
+    replace: "Knowledge Graph Query Language "
+  # Knowledge Graph
+  - trigger: "kg "
+    replace: "Knowledge Graph "
+  # data pipeline
+  - trigger: "dp "
+    replace:  "data pipeline "
+  # multimodal
+  - trigger: "mm "
+    replace:  "multimodal "
+  # Multimodal
+  - trigger: "MM "
+    replace:  "Multimodal "
+  # Hugging Face
+  - trigger: "hf "
+    replace:  "Hugging Face "
+  # LLM-Agnosticism
+  - trigger: "llma "
+    replace:  "LLM-Agnosticism "
+  # retrieval-augmented generation
+  - trigger: "rag "
+    replace:  "retrieval-augmented generation "
+  # Retrieval-augmented generation
+  - trigger: "Rag "
+    replace:  "Retrieval-augmented generation "
+  # generative AI
+  - trigger: "gai "
+    replace:  "generative AI "
+  # Generative AI
+  - trigger: "Gai "
+    replace:  "Generative AI "
+  # no/low-code
+  - trigger: "nlc "
+    replace:  "no/low-code "
+  # No/low-code
+  - trigger: "Nlc "
+    replace:  "No/low-code "
+  # Chain-of-Thought
+  - trigger: "CoT "
+    replace:  "Chain-of-Thought "
+  # chain-of-thought
+  - trigger: "cot "
+    replace:  "chain-of-thought "
+  # prompt-engineering
+  - trigger: "PE "
+    replace:  "prompt-engineering "
+  # Time to time ...
+  - trigger: "ttt "
+    replace:  "time to time "
+  # IoT
+  - trigger: "iot "
+    replace:  "IoT "
+
+  #
+  # company snippets ...
+  #
+  # Phase Change
+  - trigger: "PC "
+    replace: "Phase Change "
+  # PhaseChange.ai
+  - trigger: "pcai "
+    replace: "PhaseChange.ai "
+  # Antigravity
+  - trigger: "ag "
+    replace:  "Antigravity "
+  # Google Antigravity
+  - trigger: "gag "
+    replace:  "Google Antigravity "
+  # Superhuman GO
+  - trigger: "sug "
+    replace:  "Superhuman GO "
+  # Superhuman
+  - trigger: "Su "
+    replace:  "Superhuman "
+  # EightThreeTwo Labs
+  - trigger: "832 "
+    replace:  "EightThreeTwo Labs "
+  # CyberTruck
+  - trigger: "Ct "
+    replace:  "Cybertruck "
+  # CyberLandr
+  - trigger: "Cy "
+    replace:  "CyberLandr "
+  # CyberLandr
+  - trigger: "Cl "
+    replace:  "CyberLandr "
+  # ElasticSearch
+  - trigger: "Es "
+    replace:  "ElasticSearch "
+  # Google Apps Script
+  - trigger: "GAS"
+    replace:  "Google Apps Script "
+  # Google Cloud Platform 
+  - trigger: "GCP"
+    replace:  "Google Cloud Platform "
+  # Global Technologies Corporation
+  - trigger: "gtc"
+    replace:  "Global Technologies Corporation"
+  # Stream It, Inc.
+  - trigger: "sii"
+    replace:  "Stream It, Inc."
+  # Firebase
+  - trigger: "Fb"
+    replace:  "Firebase"
+  # Microsoft
+  - trigger: "Ms "
+    replace:  "Microsoft "    
+    propagate_case: false
+  # Pythin->Python
+  - trigger: "pythin"
+    replace:  "python"
+    propagate_case: true
+  # Pront->Print
+  - trigger: "pront"
+    replace:  "print"
+    propagate_case: true
+  # Stream It
+  - trigger: "si "
+    replace:  "Stream It "
+  # SlipStream
+  - trigger: "Ss "
+    replace:  "SlipStream "
+  # Airtable
+  - trigger: "AT "
+    replace:  "Airtable "
+  # PostgreSQL
+  - trigger: "pg "
+    replace:  "PostgreSQL "
+
+  # Webhook
+  - trigger: "wh "
+    replace:  "webhook"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
