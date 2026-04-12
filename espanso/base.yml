@@ -79,8 +79,14 @@ matches:
   #
   # writing snippets ...
   #
+  # Claude Code
+  - trigger: "cc "
+    replace:  "Claude Code "
+  # MemPalace
+  - trigger: "mp "
+    replace:  "MemPalace "
   # Anthropic
-  - trigger: "Ant "
+  - trigger: "An "
     replace:  "Anthropic "
   # Nationwide
   - trigger: "Nw "
@@ -89,7 +95,7 @@ matches:
   - trigger: "Gh "
     replace:  "GitHub "
   # QMD
-  - trigger: "qmd "
+  - trigger: "qm "
     replace:  "QMD "
   # Markdown Document
   - trigger: "mdd "
